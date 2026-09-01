@@ -514,5 +514,6 @@ Com o **git fetch** você pode fazer tudo que o git pull faz, mas ele trás mais
 ```         
 git fetch
 ```
+Com esse código você poderá tomar o seu tempo para analisar o que você puxou e ver se está correto.
 
 
