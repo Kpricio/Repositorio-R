@@ -1,1 +1,1 @@
-Eu quero usar esse só pra mandar tudo pelo terminal
+Agora mudei mensagem
