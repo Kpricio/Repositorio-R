@@ -4,7 +4,7 @@ Neste documento iremos ver sobre algumas funcionalidades do git,o que é branch,
 
 Para usar os códigos do Git você estará usando o terminal ou sistema de programação de sua preferência Mas antes,
 
-## Por que eu usaria o Git? 
+## Por que eu usaria o Git?
 
 O git ele tem uma função, a função de **guardar seus programas anteriores**, para que possa rever eles, ou até **retornar a eles em caso de algum erro** ter acontecido. Além desse uso podemos **criar ramos no nosso código**, para que possamos codar coisas diferentes, sem que o código principal seja afetado, para no futuro uni-los novamente. Outra funcionalidade é o **compartilhamento dos seus códigos**, visto que com o git você não terá que copiar seu código inteiro e enviar por whats para o seu amigo, precisando agora apenas mandar o link do repositório do GitHub
 
@@ -467,10 +467,52 @@ Assim como o segundo ele é necessário fazer uma primeira vez, mas nesse caso �
 
 ## Git pull
 
-O **Git pull** tem como principal função **puxar os commits para um de repositório remoto, para o seu computador** \### Como escrever:
+O **Git pull** tem como principal função **puxar os commits para um de repositório remoto, para o seu computador**
+
+### Como escrever:
 
 ```         
 git pull
 ```
 
 Com o Git pull, você trará todas as alterações salvas no seu GitHub e atualizará o seu código no computador. Então em um computador você pode dar um git push, para por o seu código atual no GitHub e em outro computador dar um Git pull, para trazer esses códigos atualizados, para não ter que refazer tudo.
+Mas para que tenha sucesso em seu git pull você precisa estar conectado na internet e ter sido aceito no seu pull.
+
+### O que pode ser feito junto dele?
+
+#### Git pull origin nome-da-branch
+
+Com esse código você puxa o código da branch especificada do repositório remoto para o seu computador.
+
+## git clone
+Assim como o Git pull, você trará todas as alterações salvas no seu GitHub e atualizará o seu código no computador, mas diferente dele você usará o **git clone** antes de dar qualquer git pull e fará isso só uma vez, pq a ideia é que **você estará copiando aquele repositório para um computador novo**.
+
+### Como escrever:
+
+```         
+git clone
+```
+
+Ao usar o comando **git clone** você copiará o repositório do GitHub para o seu computador, permitindo que trabalhe com o código localmente. Isso trará tudo que você tinha no seu repositório, incluindo suas branchs.
+
+### O que pode ser feito junto dele?
+
+#### Git clone -b nome_branch URL
+
+Caso queira clonar uma branch específica, use o parâmetro **-b** seguido do nome da branch. Por exemplo: 
+
+```
+Git clone -b nome_branch https://github.com/Kpricio/meu-projeto.git
+```
+
+## git fetch
+
+Com o **git fetch** você pode fazer tudo que o git pull faz, mas ele trás mais segurança pq ele não faz a alteração imediata.
+
+### Como escrever:
+
+```         
+git fetch
+```
+
+
