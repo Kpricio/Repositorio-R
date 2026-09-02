@@ -33,6 +33,212 @@ app.R               Downloads   install.log   Público         snap
 ```
 
 Para caso queira mais informações podemos colocar um -l assim:
-```
+
+```         
 ls -l
 ```
+
+```         
+total 64
+-rw-rw-r-- 1 kpri kpri 4469 ago 12 20:25  app.R
+drwxr-xr-x 2 kpri kpri 4096 abr  8 23:03 'Área de trabalho'
+drwxr-xr-x 2 kpri kpri 4096 abr  8 17:55  Documentos
+drwxr-xr-x 3 kpri kpri 4096 ago 12 19:59  Downloads
+drwxrwxr-x 2 kpri kpri 4096 abr  8 23:32  Icones
+drwxr-xr-x 3 kpri kpri 4096 mai 20 15:18  Imagens
+-rw-rw-r-- 1 kpri kpri  643 abr  9 11:05  install.log
+drwxr-xr-x 2 kpri kpri 4096 abr  8 17:55  Modelos
+drwxr-xr-x 2 kpri kpri 4096 abr  8 17:55  Músicas
+drwxr-xr-x 2 kpri kpri 4096 abr  8 17:55  Público
+drwxrwxr-x 3 kpri kpri 4096 ago 12 20:13  R
+drwxrwxr-x 5 kpri kpri 4096 set  2 08:32  Repositorio-R
+drwx------ 3 kpri kpri 4096 abr 24 14:01  snap
+drwxrwxr-x 2 kpri kpri 4096 abr  8 23:33  Temas
+drwxr-xr-x 2 kpri kpri 4096 abr  8 17:55  Vídeos
+```
+
+Outro que pode aparecer as vezes é o -a, que será usado para mostar arquivos ocultos. Ficando assim
+
+```         
+ls -a
+```
+
+mas ele pode ser usado junto do -l, mostrando tudo da forma mais detalhada
+
+```         
+ls -la
+```
+
+## tar - Tape Archive
+
+Ele é usado para combinar um conjunto de arquivos e diretórios em um unico arquivo, basicamente compactando, mas também consegue desconpactar. Mas esse é um comando que não funciona sozinho então usamos algumas coisas a mais.
+
+Alguns desses comandos são:
+
+> c → create → criar um arquivo .tar
+>
+> x → extrate → extrair um arquivo
+>
+> f → file → especificar o nome do arquivo que será criado
+>
+> z → expecifica que o arquivo é do tipo zip ou .gz
+>
+> v → verbose → mostra os arquivos sendo adicionados
+
+Existem muitos mais comandos de auxilio para o tar, mas vamos nos manter nesses, mas agora mostrando como ficaria no comando.
+
+Para comprimir usaremos a seguinte sequencia:
+
+```         
+tar cfz
+```
+
+Para extrair usamos:
+
+```         
+tar xfz
+```
+
+## sort - ordenar linhas de texto
+
+Com ele você vai poder colocar um arquivo txt organizado, geralmente de forma alfabetica Então se tivesse um arquivo texto.txt com os seguntes nomes:
+
+``` alunos.txt
+Vitor
+Bruna
+Ana
+Lucas
+Amanda
+```
+
+```         
+sort texto.txt
+```
+
+``` alunos.txt
+Amanda
+Ana
+Bruna
+Lucas
+Vitor
+```
+
+## wc - Word count
+
+É um comando tradicional do Unix/Linux usado para **contar informações sobre arquivos ou textos**. Apesar do nome significar “contagem de palavras”, ele consegue contar linhas, palavras e bytes.
+
+```         
+wc [opções] [arquivo]
+```
+
+Alguns dos comandos que podem ser utilizados em conjunto do wc são:
+
+```         
+-l -> Contar apenas linhas
+-W -> Contar apenas palavras
+-c -> Contar apenas bytes
+-m -> Contar apenas caracteres
+```
+
+o wd também pode ser usado com pipes, para ações mais rapidas, um desses exemplo são:
+
+```         
+ls | wc -l
+```
+
+Para descobrir quantos arquivos existem no diretório atual
+
+## grep - **Global Regular Expression Print**
+
+É um comando usado para **procurar textos que correspondam a um determinado padrão** dentro de arquivos ou da saída de outros comandos.
+
+```         
+grep "[palavra]" [arquivo]
+```
+
+Então se dado que estamos usando nosso arquivo alunos.txt, usado anteriormente:
+
+``` alunos.txt
+Vitor
+Bruna
+Ana
+Lucas
+Amanda
+```
+
+```         
+grep "Ana" alunos.txt
+```
+
+```         
+Amanda
+Ana
+```
+
+Mas além disso pode usar com outros comandos para fazer coisas especificas como contar o numero de palavras contendo "Ana" no documento alunos.txt
+
+```         
+grep "Ana" alunos.txt | wc -l
+```
+
+com isso receberemos o prompt: `2` , mostrando que a duas palavras contendo "Ana"
+
+Outras coisa que podemos procurar coisas em códigos assim:
+
+```         
+grep "prinf" *.c
+```
+
+## cat
+
+Ele serve principalmente para **exibir o conteúdo de arquivos no terminal**.
+
+Então ao usarmos teremos a seguinte sequencia:
+
+```         
+cat alunos.txt
+```
+
+```         
+Vitor
+Bruna
+Ana
+Lucas
+Amanda
+```
+
+## du - disk usage
+
+## df - disk free
+
+## pwd - print which directory
+
+## head - superior
+
+mostra as \*\* primeiras linhas de um arquivo
+
+```         
+head [arquivo]
+```
+
+## tail - inferior
+
+mostra as \*\* ultimas linhas de um arquivo
+
+```         
+tail [arquivo]
+```
+
+## watch
+
+## cp
+
+Consegue copiar um diretório e arquivo de uma pasta para outra, mas não apaga a original
+
+## mv - move
+
+Move um arquivo ou diretório de uma pasta para outra
+
+## clear
+
+Limpa o terminal. Muito util
