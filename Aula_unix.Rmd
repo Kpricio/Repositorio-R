@@ -69,6 +69,22 @@ mas ele pode ser usado junto do -l, mostrando tudo da forma mais detalhada
 ls -la
 ```
 
+## touch
+
+Com ele você cria um arquivo de qualquer tipo no diretorio atual, ele estará vazio.
+
+```         
+touch [arquivo.*]
+```
+
+## **xdg-open - X Desktop Group open**
+
+Com esse comando você consegue abrir qualquer arquivo
+
+```         
+xdg-open [arquivo.*]
+```
+
 ## tar - Tape Archive
 
 Ele é usado para combinar um conjunto de arquivos e diretórios em um unico arquivo, basicamente compactando, mas também consegue desconpactar. Mas esse é um comando que não funciona sozinho então usamos algumas coisas a mais.
@@ -171,7 +187,6 @@ grep "Ana" alunos.txt
 ```
 
 ```         
-Amanda
 Ana
 ```
 
@@ -181,7 +196,7 @@ Mas além disso pode usar com outros comandos para fazer coisas especificas como
 grep "Ana" alunos.txt | wc -l
 ```
 
-com isso receberemos o prompt: `2` , mostrando que a duas palavras contendo "Ana"
+com isso receberemos o prompt: 1 , mostrando que a uma palavra contendo "Ana"
 
 Outras coisa que podemos procurar coisas em códigos assim:
 
@@ -199,7 +214,7 @@ Então ao usarmos teremos a seguinte sequencia:
 cat alunos.txt
 ```
 
-```         
+``` alunos.txt
 Vitor
 Bruna
 Ana
@@ -207,11 +222,75 @@ Lucas
 Amanda
 ```
 
+Podemos fazer isso com dois arquivos ao mesmo tempo também e isso mostrará ambos no terminal.
+
+Mas mais importante que isso podemos juntar ambos em um só arquivo com:
+
+```         
+cat alunos.txt alunos2.txt > todosalunos.txt
+```
+
 ## du - disk usage
+
+Ele serve para descobrir **quanto espaço em disco arquivos e diretórios estão ocupando**.
+
+```         
+du alunos.txt
+```
+
+com esse comando receberá o seguinte prompt:
+
+```         
+4   alunos.txt
+```
+
+mas caso queira algo mais informatico, com valores colocamos `-h` ficaria assim:
+
+```         
+du alunos.txt
+```
+
+```         
+4,0K  alunos.txt
+```
 
 ## df - disk free
 
+Com esse comando nos é informada quanto do disco está livre então a sequencia seria a seguinte:
+
+```         
+df alunos.txt
+```
+
+```         
+Sist. Arq.     Blocos de 1K    Usado Disponível Uso% Montado em
+/dev/sda5          57055352 36591032   17533632  68% /
+```
+
+Assim como com o du, você consegue usar o `-h` para ter uma leitura melhor
+
+```         
+df h- alunos.txt
+```
+
+```         
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+/dev/sda5        55G   35G   17G  68% /
+```
+
 ## pwd - print which directory
+
+Com esse comando poderá ver todo o caminho para o seu diretório atual
+
+```         
+pwd
+```
+
+com isso receberá, usando o momento atual:
+
+```         
+/home/kpri/Repositorio-R
+```
 
 ## head - superior
 
@@ -242,3 +321,12 @@ Move um arquivo ou diretório de uma pasta para outra
 ## clear
 
 Limpa o terminal. Muito util
+
+```         
+clear
+```
+
+depois de escrito receberá:
+
+```         
+```
