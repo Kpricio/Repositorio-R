@@ -1,0 +1,38 @@
+# Comandos base do Terminal/Unix
+
+## cd - Change diretory
+
+com esse comando você troca o lugar onde você está no terminal.
+
+```         
+cd nome_do_diretório
+```
+
+Com isso você estará na pasta ou arquivo "nome_do_diretório", ficando assim:
+
+```         
+~/nome_do_diretório
+```
+
+Caso queira pode também escrever apenas o cd, para assim voltar para a pasta anterior a que estava.
+
+## ls - list
+
+Você poderá ver todos os arquivos e diretórios dentro de uma pasta
+
+```         
+ls
+```
+
+caso seja feito aparecera mais ou menos assim
+
+```         
+app.R               Downloads   install.log   Público         snap
+'Área de trabalho'   Icones      Modelos       R               Temas
+ Documentos          Imagens     Músicas       Repositorio-R   Vídeos
+```
+
+Para caso queira mais informações podemos colocar um -l assim:
+```
+ls -l
+```
