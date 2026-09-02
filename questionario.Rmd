@@ -1771,3 +1771,113 @@ d)
     > ls
 
 **Resposta: b**
+
+<!-- -->
+
+75. Qual sintaxe adiciona um texto tachado em Markdown?
+
+<!-- -->
+
+a\. `//texto//`
+
+b.`~~texto~~`
+
+c\. `--texto--`
+
+d\. `__texto__`
+
+**Resposta: b**
+
+76. Como inserir um link em Markdown com o texto Google apontando para <https://www.google.com>?
+
+<!-- -->
+
+a.  
+
+    > `(Google)[https://www.google.com]`
+
+b.  
+
+    > `[Google](https://www.google.com)`
+
+c.  
+
+    > `<Google>(https://www.google.com)`
+
+d.  
+
+    > `link:Google=https://www.google.com`
+
+**Resposta: b**
+
+77. Você está revisando notas em Markdown e quer destacar um comando obsoleto em tachado e sugerir outro em negrito. Como ficaria “comando1 comando2”?
+
+<!-- -->
+
+a.  
+
+    > `~~comando1~~ **comando2**`
+
+b.  
+
+    > `--comando1-- **comando2**`
+
+c.  
+
+    > `**comando1** comando2`
+
+d.  
+
+    > `//comando1// *comando2*`
+
+**Resposta: a**
+
+<!-- -->
+
+78. Um relatório precisa de uma tabela com alinhamento central na segunda coluna. Qual é a sintaxe correta?
+
+<!-- -->
+
+a.  > Coluna1 \| Coluna2 A \| B
+b.  > Coluna1 \| Coluna2 :------ \| :------: A \| B
+c.  > Coluna1 \| Coluna2 [A] \| [B]
+d.  > Coluna1 \| Coluna2 --- \| --- A \| B
+
+**Resposta: b**
+
+<!-- -->
+
+79.Qual é a sintaxe para inserir código em linha no Markdown?
+
+
+a. > `codigo` (crase)
+b. > `[codigo]`
+c. > `{codigo}`
+d. > `<<codigo>>`
+
+**Resposta: a**
+
+<!-- -->
+
+80. Você está criando documentação e precisa incluir uma imagem externa hospedada em https://site.com/img.png. Qual sintaxe usar?
+
+
+a. > `![Figura](https://site.com/img.png)`
+b. > `[Figura](https://site.com/img.png)`
+c. > `<img src="https://site.com/img.png">`
+d. > `(Figura)[https://site.com/img.png]`
+
+**Resposta: a**
+
+<!-- -->
+
+81. Qual comando exibe o manual de um comando, por exemplo ls?
+
+a. > man ls
+b. > doc ls
+c. > info ls
+d. > help ls
+
+**Resposta: a**
+
+<!-- -->
