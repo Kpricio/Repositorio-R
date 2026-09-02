@@ -318,6 +318,24 @@ Consegue copiar um diretório e arquivo de uma pasta para outra, mas não apaga 
 
 Move um arquivo ou diretório de uma pasta para outra
 
+```         
+mv alunos.txt [outro_diretório]/
+```
+
+com isso o documento alunos.txt sairá do diretório atual para outro
+
+Outra funcionalidade do `mv` é de renomear um arquivo, então:
+
+```         
+mv alunos.txt formados.txt
+```
+
+Outra função é trocar de diretório, ficando assim
+
+```         
+mv fotos/ fotosnovas/
+```
+
 ## clear
 
 Limpa o terminal. Muito util
