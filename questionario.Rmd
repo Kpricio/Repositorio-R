@@ -1,0 +1,1773 @@
+1.  Em uma apresentação feita em Markdown, você deseja incluir a imagem grafico.png com a legenda "Gráfico de Resultados". Qual é a sintaxe correta?
+
+<!-- -->
+
+a)  
+
+    > `![Gráfico de Resultados](grafico.png)`
+
+b)  
+
+    > `[Gráfico de Resultados](grafico.png)`
+
+c)  
+
+    > `<img src="grafico.png">`
+
+d)  
+
+    > `(grafico.png)[Gráfico de Resultados]`
+
+**Resposta: a**
+
+<!-- -->
+
+2.  Durante o trabalho em grupo, outro aluno fez alterações na branch main. Antes de enviar seu código, você quer garantir que não haja conflitos. Qual comando deve ser usado para atualizar sua branch local com as alterações remotas?
+
+<!-- -->
+
+a)  
+
+    > git add .
+
+b)  
+
+    > git fetch seguido de git merge origin/main
+
+c)  
+
+    > git commit -m "update"
+
+d)  
+
+    > git branch -d main
+
+**Resposta: b**
+
+<!-- -->
+
+3.  Qual comando exibe em tempo real as últimas linhas de um arquivo em crescimento, como servidor.log?
+
+<!-- -->
+
+a)  
+
+    > head -f servidor.log
+
+b)  
+
+    > cat -f servidor.log
+
+c)  
+
+    > tail -f servidor.log
+
+d)  
+
+    > watch servidor.log
+
+**Resposta: c**
+
+<!-- -->
+
+4.  Você tem um arquivo nomes.txt com uma lista de nomes, mas alguns aparecem repetidos. Para exibir apenas os nomes únicos em ordem alfabética, qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > sort nomes.txt \| uniq
+
+b)  
+
+    > grep -u nomes.txt
+
+c)  
+
+    > sort nomes.txt
+
+d)  
+
+    > uniq nomes.txt
+
+**Resposta: a**
+
+<!-- -->
+
+5.  Qual comando copia recursivamente uma pasta dados/ para o diretório /backup/?
+
+<!-- -->
+
+a)  
+
+    > cp -r dados/ /backup/
+
+b)  
+
+    > copy dados/ /backup/
+
+c)  
+
+    > cp dados /backup/
+
+d)  
+
+    > mv -r dados/ /backup/
+
+**Resposta: a**
+
+<!-- -->
+
+6.  Qual comando executa simulação em segundo plano, liberando o terminal?
+
+<!-- -->
+
+a)  
+
+    > bg ./simulacao
+
+b)  
+
+    > ./simulacao &
+
+c)  
+
+    > ./simulacao -bg
+
+d)  
+
+    > background ./simulacao
+
+**Resposta: b**
+
+<!-- -->
+
+7.  Você quer criar um repositório Git local e vinculá-lo a um remoto no GitHub. Qual sequência está correta?
+
+<!-- -->
+
+a)  
+
+    > git start, git push <url>
+
+b)  
+
+    > git clone <url>, git commit -m "first"
+
+c)  
+
+    > git init, git add ., git commit -m "first", git remote add origin <url>, git push -u origin main
+
+d)  
+
+    > git remote create <url>, git commit -m "first"
+
+**Resposta: c**
+
+<!-- -->
+
+8.  Qual é a sintaxe correta para inserir uma imagem chamada logo.png com o texto alternativo Logo?
+
+<!-- -->
+
+a)  
+
+    > `[logo.png](Logo)`
+
+b)  
+
+    > `![Logo](logo.png)`
+
+c)  
+
+    > `(logo.png)[Logo]`
+
+d)  
+
+    > `<img src="logo.png" alt="Logo">`
+
+**Resposta: b**
+
+<!-- -->
+
+9.  Para visualizar continuamente o consumo de CPU e memória dos processos em execução, qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > uptime
+
+b)  
+
+    > ps -ef
+
+c)  
+
+    > top
+
+d)  
+
+    > jobs -l
+
+**Resposta: c**
+
+<!-- -->
+
+10. Você está escrevendo um tutorial e deseja adicionar uma lista de itens não numerados. Qual opção é correta?
+
+<!-- -->
+
+a)  
+
+    > `1.  Item A 2. Item B`
+
+b)  
+
+    > `- Item A - Item B ou \* Item A \* Item B`
+
+c)  
+
+    > x Item A x Item B
+
+d)  
+
+    > `a.  Item A b. Item B`
+
+**Resposta: b**
+
+<!-- -->
+
+11. Você quer criar um commit mas deseja que ele seja em um commit amend para alterar o último commit. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > git commit --amend
+
+b)  
+
+    > git commit --redo
+
+c)  
+
+    > git amend commit
+
+d)  
+
+    > git rebase
+
+**Resposta: a**
+
+<!-- -->
+
+12. Qual comando compacta a pasta projeto em projeto.tar.gz?
+
+<!-- -->
+
+a)  
+
+    > tar -cvzf projeto.tar.gz projeto/
+
+b)  
+
+    > tar -xvzf projeto.tar.gz projeto/
+
+c)  
+
+    > gzip projeto \> projeto.tar.gz
+
+d)  
+
+    > zip projeto.tar.gz projeto/
+
+**Resposta: a**
+
+<!-- -->
+
+13. Em uma atividade de programação, você quer mostrar o comando ls -l dentro de uma frase. Como fazer isso em Markdown?
+
+<!-- -->
+
+a)  
+
+    > `**ls -l**`
+
+b)  
+
+    > `(ls -l)`
+
+c)  
+
+    > `ls -l` (crase)
+
+d)  
+
+    > `[ls -l]`
+
+**Resposta: c**
+
+<!-- -->
+
+14. No manual do seu pacote, você precisa adicionar o link para a documentação online. Qual é a forma correta em Markdown?
+
+<!-- -->
+
+a)  
+
+    > `[Documentação](https://docs.meuprojeto.com)`
+
+b)  
+
+    > `link:Documentação=<https://docs.meuprojeto.com>`
+
+c)  
+
+    > `<documentação>(https://docs.meuprojeto.com)`
+
+d)  
+
+    > `(Documentação)[<https://docs.meuprojeto.com>]`
+
+**Resposta: a**
+
+<!-- -->
+
+15. Depois de fazer o commit, você quer enviar suas alterações para o repositório remoto. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > git merge
+
+b)  
+
+    > git push origin feature-login
+
+c)  
+
+    > git status
+
+d)  
+
+    > git pull
+
+**Resposta: b**
+
+<!-- -->
+
+16. Como navegar do diretório /home/usuario/ até /home/usuario/projetos/analise/?
+
+<!-- -->
+
+a)  
+
+    > cd /projetos/analise/
+
+b)  
+
+    > cd /home/projetos/analise/
+
+c)  
+
+    > cd /home/usuario/projetos/analise/
+
+d)  
+
+    > cp projetos/analise/
+
+**Resposta: c**
+
+<!-- -->
+
+17. Você está corrigindo um documento e deseja indicar um trecho obsoleto, tachando a palavra "antigo". Qual sintaxe deve ser usada?
+
+<!-- -->
+
+a)  
+
+    > `//antigo//`
+
+b)  
+
+    > `--antigo--`
+
+c)  
+
+    > `**antigo**`
+
+d)  
+
+    > `~~antigo~~`
+
+**Resposta: d**
+
+<!-- -->
+
+18. Como inserir uma linha horizontal (separador) em Markdown?
+
+<!-- -->
+
+a)  
+
+    > `----------------------------------------------------------------------`
+
+b)  
+
+    > `----------------------------------------------------------------------`
+
+c)  
+
+    > `=== ou ---`
+
+d)  
+
+    > `###`
+
+**Resposta: a**
+
+<!-- -->
+
+19. Como criar uma citação (blockquote) em Markdown?
+
+<!-- -->
+
+a)  
+
+    > `> Este é um bloco de citação`
+
+b)  
+
+    > `"Este é um bloco de citação"`
+
+c)  
+
+    > `[citação] Este é um bloco de citação`
+
+d)  
+
+    > `/ Este é um bloco de citação /`
+
+**Resposta: a**
+
+<!-- -->
+
+20. Qual sintaxe aplica negrito em um texto no Markdown?
+
+<!-- -->
+
+a)  
+
+    > `*texto*`
+
+b)  
+
+    > `**texto**`
+
+c)  
+
+    > `~~texto~~`
+
+d)  
+
+    > `*texto*`
+
+**Resposta: b**
+
+<!-- -->
+
+21. Um arquivo chamado dados.txt possui várias colunas separadas por vírgula. Para exibir apenas a segunda coluna, qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > awk -c2 dados.txt
+
+b)  
+
+    > cut -d"," -f2 dados.txt
+
+c)  
+
+    > grep -2 dados.txt
+
+d)  
+
+    > head -2 dados.txt
+
+**Resposta: b**
+
+<!-- -->
+
+22. Você clonou um repositório remoto no GitHub para sua máquina local usando git clone. Qual comando você usaria para ver todas as branches disponíveis localmente e remotamente?
+
+<!-- -->
+
+a)  
+
+    > git fetch
+
+b)  
+
+    > git branch -a
+
+c)  
+
+    > git status
+
+d)  
+
+    > git log
+
+**Resposta: b**
+
+<!-- -->
+
+23. Você está em /home/usuario/ e deseja copiar o arquivo relatorio.pdf para o diretório do usuário ana. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > mv relatorio.pdf /home/ana/
+
+b)  
+
+    > cp relatorio.pdf /home/ana/
+
+c)  
+
+    > scp relatorio.pdf ana/
+
+d)  
+
+    > copy relatorio.pdf /home/ana/
+
+**Resposta: b**
+
+<!-- -->
+
+24. Qual comando lista apenas os arquivos que contêm 20230815 no nome dentro de /dados/?
+
+<!-- -->
+
+a)  
+
+    > ls *20230815*
+
+b)  
+
+    > ls \| grep .txt
+
+c)  
+
+    > ls log_20230816.txt
+
+d)  
+
+    > ls log\*.txt
+
+**Resposta: a**
+
+<!-- -->
+
+25. Você deseja clonar um repositório mas não precisa do histórico de commits para economizar espaço. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > git clone <url> --shallow
+
+b)  
+
+    > git clone --bare <url>
+
+c)  
+
+    > git clone --depth 1 <url>
+
+d)  
+
+    > git clone --no-history <url>
+
+**Resposta: c**
+
+<!-- -->
+
+26. Durante um merge, você encontra um conflito em app.R. Qual ação é necessária para resolvê-lo?
+
+<!-- -->
+
+a)  
+
+    > Rodar git merge --abort
+
+b)  
+
+    > Editar o arquivo para resolver o conflito e depois fazer git add app.R
+
+c)  
+
+    > Rodar git reset
+
+d)  
+
+    > Deletar o arquivo
+
+**Resposta: b**
+
+<!-- -->
+
+27. Qual comando mostra o uso de disco em formato legível (Kb, Mb, Gb)?
+
+<!-- -->
+
+a)  
+
+    > ls -h
+
+b)  
+
+    > disk -h
+
+c)  
+
+    > du -h
+
+d)  
+
+    > df -h
+
+**Resposta: c**
+
+<!-- -->
+
+28. Você modificou alguns arquivos, mas ainda não quer enviar essas alterações para o commit. Qual comando permite verificar quais arquivos foram modificados?
+
+<!-- -->
+
+a)  
+
+    > git add .
+
+b)  
+
+    > git diff
+
+c)  
+
+    > git commit -m "msg"
+
+d)  
+
+    > git status
+
+**Resposta: d**
+
+<!-- -->
+
+29. Qual é a forma correta de criar uma lista numerada em Markdown?
+
+<!-- -->
+
+a)  
+
+    > `1.  Item 1 2. Item 2 3. Item 3`
+
+b)  
+
+    > `- Item 1 \* Item 2 \* Item 3`
+
+c)  
+
+    > `- Item 1 - Item 2 - Item 3`
+
+d)  
+
+    > `# Item 1 \# Item 2 \# Item 3`
+
+**Resposta: a**
+
+<!-- -->
+
+30. Em uma aula prática, o professor pediu que cada aluno criasse uma branch para desenvolver uma função específica. Qual comando cria uma branch chamada nova-funcao e já muda para ela?
+
+<!-- -->
+
+a)  
+
+    > git merge nova-funcao
+
+b)  
+
+    > git branch nova-funcao
+
+c)  
+
+    > git checkout -b nova-funcao
+
+d)  
+
+    > git switch main
+
+**Resposta: c**
+
+<!-- -->
+
+31. Para monitorar em tempo real as tentativas de login registradas em /var/log/auth.log, qual comando é adequado?
+
+<!-- -->
+
+a)  
+
+    > watch /var/log/auth.log
+
+b)  
+
+    > less /var/log/auth.log
+
+c)  
+
+    > head -f /var/log/auth.log
+
+d)  
+
+    > tail -f /var/log/auth.log
+
+**Resposta: d**
+
+<!-- -->
+
+32. Você está documentando instruções de instalação e deseja criar uma lista de passos numerados. Qual sintaxe deve ser utilizada?
+
+<!-- -->
+
+a)  
+
+    > `# Passo 1`
+
+b)  
+
+    > `1.  Passo 1`
+
+c)  
+
+    > `- Passo 1`
+
+d)  
+
+    > `> Passo 1`
+
+**Resposta: b**
+
+<!-- -->
+
+33. Você está elaborando um relatório e precisa incluir uma tabela com duas colunas "País" e "População". Qual opção é correta?
+
+<!-- -->
+
+a)  
+
+    > `País: População Brasil: 210M`
+
+b)  
+
+    > `[País][População] [Brasil][210M]`
+
+c)  
+
+    > `País, População Brasil, 210M Portugal, 10M`
+
+d)  
+
+    > `País \| População Brasil \| 210M Portugal \| 10M`
+
+**Resposta: d**
+
+<!-- -->
+
+34. Você deseja remover uma branch local chamada bugfix-123. Qual comando é correto?
+
+<!-- -->
+
+a)  
+
+    > git delete branch bugfix-123
+
+b)  
+
+    > git remove bugfix-123
+
+c)  
+
+    > git branch -d bugfix-123
+
+d)  
+
+    > git branch -r bugfix-123
+
+**Resposta: c**
+
+<!-- -->
+
+35. Qual comando altera o dono de um arquivo relatorio.txt para o usuário ana?
+
+<!-- -->
+
+a)  
+
+    > chown ana relatorio.txt
+
+b)  
+
+    > chgrp ana relatorio.txt
+
+c)  
+
+    > chmod ana relatorio.txt
+
+d)  
+
+    > owner ana relatorio.txt
+
+**Resposta: a**
+
+<!-- -->
+
+36. Qual comando remove um diretório vazio chamado temp/?
+
+<!-- -->
+
+a)  
+
+    > rm -rf temp/
+
+b)  
+
+    > delete temp/
+
+c)  
+
+    > rmdir temp/
+
+d)  
+
+    > rm temp/
+
+**Resposta: c**
+
+<!-- -->
+
+37. Você está sem espaço no disco e deseja verificar o tamanho total da pasta /home/usuario/projetos/. Qual comando deve ser utilizado?
+
+<!-- -->
+
+a)  
+
+    > stat /home/usuario/projetos/
+
+b)  
+
+    > df -h /home/usuario/projetos/
+
+c)  
+
+    > ls -lh /home/usuario/projetos/
+
+d)  
+
+    > du -sh /home/usuario/projetos/
+
+**Resposta: d**
+
+<!-- -->
+
+38. No diretório \~/relatorios/, você precisa criar um link simbólico chamado ultimo.pdf apontando para relatorio2025.pdf. Qual comando é correto?
+
+<!-- -->
+
+a)  
+
+    > link relatorio2025.pdf ultimo.pdf
+
+b)  
+
+    > ln relatorio2025.pdf ultimo.pdf
+
+c)  
+
+    > ln -s relatorio2025.pdf ultimo.pdf
+
+d)  
+
+    > cp relatorio2025.pdf ultimo.pdf
+
+**Resposta: c**
+
+<!-- -->
+
+39. Você quer combinar as alterações de uma branch feature-login na branch main. Qual comando faz isso?
+
+<!-- -->
+
+a)  
+
+    > git branch main
+
+b)  
+
+    > git push main
+
+c)  
+
+    > git merge feature-login
+
+d)  
+
+    > git checkout feature-login
+
+**Resposta: c**
+
+<!-- -->
+
+40. Um artigo em Markdown deve ter uma nota de rodapé explicando um conceito. Qual sintaxe é usada para notas de rodapé?
+
+<!-- -->
+
+a)  
+
+    > `//nota//`
+
+b)  
+
+    > `[\^1] e embaixo [\^1]: Texto da nota`
+
+c)  
+
+    > `[nota] Texto da nota`
+
+d)  
+
+    > `(1) Texto da nota`
+
+**Resposta: b**
+
+<!-- -->
+
+41. Você quer descartar alterações locais em um arquivo chamado index.html antes do commit. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > git add index.html
+
+b)  
+
+    > git checkout -- index.html
+
+c)  
+
+    > git reset index.html
+
+d)  
+
+    > git commit -m "reset"
+
+**Resposta: b**
+
+<!-- -->
+
+42. Para visualizar apenas as 10 primeiras linhas de resultados.txt, qual comando deve ser usado?
+
+<!-- -->
+
+a)  
+
+    > head -10 resultados.txt
+
+b)  
+
+    > last 10 resultados.txt
+
+c)  
+
+    > top resultados.txt
+
+d)  
+
+    > cat -n10 resultados.txt
+
+**Resposta: a**
+
+<!-- -->
+
+43. Qual comando redireciona a saída de ls /bin para lista_bin.txt, adicionando ao final sem sobrescrever o conteúdo existente?
+
+<!-- -->
+
+a)  
+
+    > ls /bin \> lista_bin.txt
+
+b)  
+
+    > ls /bin \>\> lista_bin.txt
+
+c)  
+
+    > ls /bin save lista_bin.txt
+
+d)  
+
+    > ls /bin \| lista_bin.txt
+
+**Resposta: b**
+
+<!-- -->
+
+44. Você está criando uma apresentação e quer inserir um checklist de tarefas em Markdown. Qual opção é correta?
+
+<!-- -->
+
+a)  
+
+    > `- [ ] Tarefa 1 - [x] Tarefa 2`
+
+b)  
+
+    > `# Tarefa 1 \# Tarefa 2`
+
+c)  
+
+    > `[x] Tarefa 1 [] Tarefa 2`
+
+d)  
+
+    > `- Tarefa 1 \* Tarefa 2`
+
+**Resposta: a**
+
+<!-- -->
+
+45. Você precisa criar um repositório em sala de aula, incluir códigos durante a aula e finalizar o exercício em casa. Qual é a sequência de comandos correta para criar o repositório local, sincronizar com o remoto no GitHub e manter ambos os computadores atualizados?
+
+<!-- -->
+
+a)  
+
+    > git branch main, git push
+
+b)  
+
+    > git init, git add ., git commit -m "inicial", git remote add origin <url>, git push -u origin main
+
+c)  
+
+    > git clone <url>, git commit -m "inicial", git push
+
+d)  
+
+    > git start, git add ., git push <url>
+
+**Resposta: b**
+
+<!-- -->
+
+46. Você criou uma nova branch chamada feature-login para desenvolver uma funcionalidade. Como você muda para essa branch?
+
+<!-- -->
+
+a)  
+
+    > git switch main
+
+b)  
+
+    > git checkout feature-login
+
+c)  
+
+    > git merge feature-login
+
+d)  
+
+    > git branch feature-login
+
+**Resposta: b**
+
+<!-- -->
+
+47. Um script processa.sh pode levar horas para rodar. Para garantir que ele continue mesmo após fechar o terminal, qual comando deve ser utilizado?
+
+<!-- -->
+
+a)  
+
+    > ./processa.sh -bg
+
+b)  
+
+    > background ./processa.sh
+
+c)  
+
+    > fg ./processa.sh
+
+d)  
+
+    > nohup ./processa.sh &
+
+**Resposta: d**
+
+<!-- -->
+
+48. Qual comando conta linhas, palavras e caracteres no arquivo artigo.txt?
+
+<!-- -->
+
+a)  
+
+    > count artigo.txt
+
+b)  
+
+    > wc artigo.txt
+
+c)  
+
+    > lines artigo.txt
+
+d)  
+
+    > stats artigo.txt
+
+**Resposta: b**
+
+<!-- -->
+
+49. Você está escrevendo um README para um projeto no GitHub e precisa criar um título principal Análise de Dados. Qual sintaxe deve ser usada?
+
+<!-- -->
+
+a)  
+
+    > `## Análise de Dados`
+
+b)  
+
+    > `[Análise de Dados]`
+
+c)  
+
+    > `*Análise de Dados*`
+
+d)  
+
+    > `# Análise de Dados`
+
+**Resposta: d**
+
+<!-- -->
+
+50. Após fazer alterações nos arquivos, você quer adicioná-las à staging area. Qual comando é correto?
+
+<!-- -->
+
+a)  
+
+    > git add .
+
+b)  
+
+    > git push
+
+c)  
+
+    > git merge
+
+d)  
+
+    > git commit -m "mensagem"
+
+**Resposta: a**
+
+<!-- -->
+
+51. Qual a sintaxe correta para criar um título de nível 1 em Markdown?
+
+<!-- -->
+
+a)  
+
+    > `*Título*`
+
+b)  
+
+    > `= Título`
+
+c)  
+
+    > `## Título`
+
+d)  
+
+    > `# Título`
+
+**Resposta: d**
+
+<!-- -->
+
+52. No diretório atual, você deseja contar quantos arquivos .csv existem. Qual comando é adequado?
+
+<!-- -->
+
+a)  
+
+    > find . -type f \| wc -l
+
+b)  
+
+    > wc -l \*.csv
+
+c)  
+
+    > ls \*.csv \| wc -l
+
+d)  
+
+    > grep .csv \*
+
+**Resposta: c**
+
+<!-- -->
+
+53. Você está analisando grandes arquivos de log em /var/log/. Para verificar apenas as linhas que contêm a palavra ERROR no arquivo app.log, qual comando deve ser usado?
+
+<!-- -->
+
+a)  
+
+    > cut ERROR app.log
+
+b)  
+
+    > find ERROR app.log
+
+c)  
+
+    > grep ERROR app.log
+
+d)  
+
+    > wc ERROR app.log
+
+**Resposta: c**
+
+<!-- -->
+
+54. Você está preparando um README e precisa mostrar um trecho de código em Python. Qual é a sintaxe correta para criar um bloco de código?
+
+<!-- -->
+
+a)  
+
+    > [code] print("Olá")
+
+b)  
+
+    > print("Olá")
+
+c)  
+
+    > três crases + python + código + três crases
+
+d)  
+
+    > (code) print("Olá")
+
+**Resposta: c**
+
+<!-- -->
+
+55. Você clonou um repositório e quer criar uma branch local com o mesmo nome de uma branch remota chamada develop. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > git fetch origin develop
+
+b)  
+
+    > git branch develop origin/develop
+
+c)  
+
+    > git checkout develop
+
+d)  
+
+    > git pull develop
+
+**Resposta: b**
+
+<!-- -->
+
+56. Qual comando lista arquivos ocultos em um diretório?
+
+<!-- -->
+
+a)  
+
+    > ls -r
+
+b)  
+
+    > ls -h
+
+c)  
+
+    > ls -l
+
+d)  
+
+    > ls -a
+
+**Resposta: d**
+
+<!-- -->
+
+57. Você fez alterações em um projeto na universidade e quer continuar trabalhando em casa. Qual comando deve ser usado primeiro para trazer as alterações do repositório remoto antes de continuar a trabalhar?
+
+<!-- -->
+
+a)  
+
+    > git commit -m "atualização"
+
+b)  
+
+    > git clone
+
+c)  
+
+    > git pull
+
+d)  
+
+    > git push
+
+**Resposta: c**
+
+<!-- -->
+
+58. Para que script.sh seja executável por todos, mas apenas editável pelo dono, qual comando é adequado?
+
+<!-- -->
+
+a)  
+
+    > chmod 744 script.sh
+
+b)  
+
+    > chmod 755 script.sh
+
+c)  
+
+    > chmod 777 script.sh
+
+d)  
+
+    > chmod 644 script.sh
+
+**Resposta: b**
+
+<!-- -->
+
+59. Qual comando encontra o arquivo dados.csv em qualquer lugar do sistema?
+
+<!-- -->
+
+a)  
+
+    > search dados.csv /
+
+b)  
+
+    > grep -r dados.csv /
+
+c)  
+
+    > locate -name dados.csv /
+
+d)  
+
+    > find / -name dados.csv
+
+**Resposta: d**
+
+<!-- -->
+
+60. Qual comando interrompe imediatamente um processo em execução no terminal?
+
+<!-- -->
+
+a)  
+
+    > Ctrl+D
+
+b)  
+
+    > Ctrl+S
+
+c)  
+
+    > Ctrl+Z
+
+d)  
+
+    > Ctrl+C
+
+**Resposta: d**
+
+<!-- -->
+
+61. Em uma documentação, você deseja incluir um link para outra seção do mesmo arquivo chamada "Conclusão". Qual sintaxe correta?
+
+<!-- -->
+
+a)  
+
+    > `[Conclusão](Conclusão)`
+
+b)  
+
+    > `<Conclusão>`
+
+c)  
+
+    > `[Conclusão](#Conclusão)`
+
+d)  
+
+    > `[Conclusão]{#Conclusão}`
+
+**Resposta: c**
+
+<!-- -->
+
+62. Você quer buscar todas as alterações do repositório remoto sem fazer merge automático. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > git merge
+
+b)  
+
+    > git pull
+
+c)  
+
+    > git fetch
+
+d)  
+
+    > git clone
+
+**Resposta: c**
+
+<!-- -->
+
+63. Você quer verificar quais arquivos foram alterados entre dois commits abc123 e def456. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > git log abc123..def456
+
+b)  
+
+    > git status abc123 def456
+
+c)  
+
+    > git diff abc123 def456
+
+d)  
+
+    > git show abc123 def456
+
+**Resposta: c**
+
+<!-- -->
+
+64. Um colega enviou o arquivo dados.csv compactado como dados.csv.gz. Para descompactá-lo mantendo o original, qual comando deve ser usado?
+
+<!-- -->
+
+a)  
+
+    > gzip -d dados.csv.gz
+
+b)  
+
+    > tar -xvzf dados.csv.gz
+
+c)  
+
+    > gunzip -k dados.csv.gz
+
+d)  
+
+    > unzip dados.csv.gz
+
+**Resposta: c**
+
+<!-- -->
+
+65. Você quer ver o histórico de commits com detalhes sobre autor, data e mensagens. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > git log
+
+b)  
+
+    > git branch
+
+c)  
+
+    > git diff
+
+d)  
+
+    > git status
+
+**Resposta: a**
+
+<!-- -->
+
+66. Você está criando documentação e precisa incluir uma imagem externa hospedada em `<https://site.com/img.png>`. Qual sintaxe usar?
+
+<!-- -->
+
+a)  
+
+    > `![Figura](https://site.com/img.png)`
+
+b)  
+
+    > `[Figura](https://site.com/img.png)`
+
+c)  
+
+    > `<img src="https://site.com/img.png">`
+
+d)  
+
+    > `(Figura)[<https://site.com/img.png>]`
+
+**Resposta: a**
+
+<!-- -->
+
+67. Você finalizou a implementação da funcionalidade e quer registrar as alterações. Qual comando realiza o commit das mudanças adicionadas à staging area?
+
+<!-- -->
+
+a)  
+
+    > git log
+
+b)  
+
+    > git commit -m "mensagem"
+
+c)  
+
+    > git add .
+
+d)  
+
+    > git push
+
+**Resposta: b**
+
+<!-- -->
+
+68. Você precisa procurar a palavra senha em todos os arquivos .conf dentro de /etc/. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > wc -l /etc/\*.conf \| senha
+
+b)  
+
+    > find /etc/ -name "\*.conf" \| grep senha
+
+c)  
+
+    > grep senha /etc/\*.conf
+
+d)  
+
+    > cat /etc/\*.conf senha
+
+**Resposta: c**
+
+<!-- -->
+
+69. Você precisa atualizar sua branch local com as alterações mais recentes do repositório remoto. Qual comando é usado?
+
+<!-- -->
+
+a)  
+
+    > git pull
+
+b)  
+
+    > git fetch origin
+
+c)  
+
+    > git push
+
+d)  
+
+    > git clone
+
+**Resposta: a**
+
+<!-- -->
+
+70. Para criar uma tabela simples em Markdown, qual opção está correta?
+
+<!-- -->
+
+a)  
+
+    > `Coluna1 \| Coluna2 A \| B C \| D`
+
+b)  
+
+    > `[Coluna1][Coluna2] [A][B] [C][D]`
+
+c)  
+
+    > `Coluna1: Coluna2 A: B C: D`
+
+d)  
+
+    > `Coluna1, Coluna2 A, B C, D`
+
+**Resposta: a**
+
+<!-- -->
+
+71. Você precisa saber rapidamente o tipo de arquivo dados.bin (se é texto, binário, imagem etc.). Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > ls -lh dados.bin
+
+b)  
+
+    > file dados.bin
+
+c)  
+
+    > wc dados.bin
+
+d)  
+
+    > stat dados.bin
+
+**Resposta: b**
+
+<!-- -->
+
+72. Você deseja renomear a branch atual de feature-login para login-system. Qual comando usar?
+
+<!-- -->
+
+a)  
+
+    > git branch login-system
+
+b)  
+
+    > git switch login-system
+
+c)  
+
+    > git rename feature-login login-system
+
+d)  
+
+    > git branch -m login-system
+
+**Resposta: d**
+
+<!-- -->
+
+73. O arquivo acessos.log contém milhares de linhas. Você deseja contar quantas vezes a palavra LOGIN aparece nele. Qual comando deve ser usado?
+
+<!-- -->
+
+a)  
+
+    > cat acessos.log LOGIN
+
+b)  
+
+    > grep LOGIN acessos.log \| wc -l
+
+c)  
+
+    > find LOGIN acessos.log
+
+d)  
+
+    > wc -l acessos.log
+
+**Resposta: b**
+
+<!-- -->
+
+74. Qual comando exibe o diretório de trabalho atual?
+
+<!-- -->
+
+a)  
+
+    > cd
+
+b)  
+
+    > pwd
+
+c)  
+
+    > whoami
+
+d)  
+
+    > ls
+
+**Resposta: b**
