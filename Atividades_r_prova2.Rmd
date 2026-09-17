@@ -1,0 +1,488 @@
+---
+title: "Estudos para prova 2"
+output: html_document
+date: "2026-09-17"
+---
+
+1.  Se você deseja gerar 10 realizações independentes de uma distribuição Gaussiana com média 1.80 e desvio-padrão 0.1, qual comando deve ser invocado?
+
+Questão 1 Escolha uma opção:
+
+a)  runif(n = 10, min = 1.70, max = 1.90)
+
+```{r}
+runif(n = 10, min = 1.70, max = 1.90)
+```
+
+b)  pnorm(q = 10, mean = 1.80, sd = 0.1)
+
+```{r}
+pnorm(q = 10, mean = 1.80, sd = 0.1)
+```
+
+c)  sample(1.80, 0.1, size = 10)
+
+```{r}
+sample(1.80, 0.1, size = 10)
+```
+
+d)  rnorm(n = 10, mean = 1.80, sd = 0.1)
+
+```{r}
+rnorm(n = 10, mean = 1.80, sd = 0.1)
+```
+
+e)  dnorm(x = 10, mean = 1.80, sd = 0.1)
+
+```{r}
+dnorm(x = 10, mean = 1.80, sd = 0.1)
+```
+
+Resposta: d)
+
+2.  Para inspecionar a estrutura interna detalhada de um objeto complexo, como um `data.frame` contendo tipos de variáveis mistos, observações e níveis de fatores, qual função é considerada a principal ferramenta de diagnóstico rápido?
+
+```{r}
+data_frame <-  data.frame(x <- c(1, 2, 3),
+                          y <- c("a", "b", "c"))
+```
+
+Escolha uma opção:
+
+a)  names()
+
+```{r}
+names(data_frame)
+```
+
+b)  str()
+
+```{r}
+str(data_frame)
+```
+
+c)  head()
+
+```{r}
+head(data_frame)
+```
+
+d)  dim()
+
+```{r}
+dim(data_frame)
+```
+
+e)  ls()
+
+```{r}
+ls(data_frame)
+```
+
+Resposta: b)
+
+3.  Avalie as instruções abaixo sobre a criação de números inteiros e reais no `R`: `{} val1 <- 10L val2 <- 10` Qual alternativa descreve corretamente o retorno das funções `is.integer()` e `is.double()` para esses objetos?
+
+```{r}
+val1 <- 10L 
+val2 <- 10
+is.integer(val1)
+is.double(val1)
+is.integer(val2)
+is.double(val2)
+```
+
+a)  `is.integer(val1)` é TRUE; `is.double(val1)` é FALSE; `is.integer(val2)` é FALSE; `is.double(val2)` é TRUE.
+
+b)  `is.integer(val1)` é FALSE; `is.double(val1)` é TRUE; `is.integer(val2)` é TRUE; `is.double(val2)` é FALSE.
+
+c)  `is.double(val2)` retorna FALSE, porque valores sem o sufixo L são tratados internamente como raw.
+
+d)  `is.integer(val1)` é TRUE; `is.double(val1)` é TRUE; `is.integer(val2)` é TRUE; `is.double(val2)` é TRUE.
+
+e)  Ambos são estritamente inteiros, pois o valor numérico é exato sem casas decimais.
+
+Resposta: a)
+
+4.  Ao inspecionar o ambiente de execução no `R`, qual função retorna a ordem de busca dos ambientes e pacotes anexados (espaços de trabalho/namespaces) onde o interpretador procura por objetos quando eles não estão no .GlobalEnv?
+
+Questão 4 Escolha uma opção:
+
+a)  search()
+
+```{r}
+search()
+```
+
+b)  find()
+
+```{r}
+find(".GlobalEnv")
+```
+
+c)  attributes()
+
+```{r}
+attributes(1)
+```
+
+d)  dir()
+
+```{r}
+dir()
+```
+
+e)  ls()
+
+```{r}
+ls()
+```
+
+Resposta: a)
+
+5.Ao executar o comando matriz \<- matrix(c(1, 2, 3, 4, 5, 6, 7, 8), nrow = 4, ncol = 2, byrow = TRUE), qual é o valor acessado na posição correspondente a matriz[3, 1]?
+
+```{r}
+matriz <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8), nrow = 4, ncol = 2, byrow = TRUE)
+matriz[3, 1]
+```
+
+Questão 5 Escolha uma opção:
+
+a)  3
+b)  2
+c)  6
+d)  5
+e)  4
+
+Resposta: d)
+
+6.  Durante a criação de pipelines e scripts de rotina em ambientes de produção que demandam execuções não supervisionadas (modo batch), qual comando de terminal é comumente empregado para disparar um script R diretamente?
+
+Questão 6 Escolha uma opção: a) Rscript -f meu_script.R
+
+```         
+Rscript -f meu_script.R
+```
+
+> Neste comando específico, o -f significa file (arquivo). Ele indica ao Rscript qual arquivo contendo código R deve ser carregado e executado em lote (batch).
+>
+> Executar Rscript -f meu_script.R tem o mesmo efeito de Rscript meu_script.R
+
+b)  R --interactive meu_script.R
+
+> Este comando não existe
+
+c)  execute-R -file meu_script.R \> Este comando não existe
+
+d)  R-terminal run meu_script.R
+
+> Este comando não existe
+
+e)  source --batch meu_script.R
+
+> Este comando não existe
+
+Resposta: a)
+
+7.  No R, variáveis categóricas que possuem uma hierarquia natural (como classes socioeconômicas ou níveis de severidade) são representadas de forma ordenada através da classe:
+
+Questão 7 Escolha uma opção: a) raw indexado numericamente
+
+> rwa é usado para armazenar dados em bytes brutos.
+
+b)  factor com o parâmetro ordered = TRUE
+
+> a estrutura de dados utilizada para armazenar variáveis categóricas (fatores).
+
+c)  matrix ordinal unidimensional
+
+> matrix é uma Estrutura bidimensional de dados do mesmo tipo, não sendo uma classe específica para ordenar categorias.
+
+d)  levels com o parâmetro sort = TRUE
+
+> levels é uma função para consultar ou definir os rótulos de um factor, e não uma classe de dados.
+
+e)  character
+
+> character armazena texto puro, sem qualquer noção interna de ordem, hierarquia ou propriedades estatísticas categóricas.
+
+Resposta: b)
+
+8.No contexto do ecossistema R, qual arquivo especial armazena nativamente em formato binário os objetos existentes no ambiente global (.GlobalEnv) para permitir a restauração de sessões de processamento demorado?
+
+Questão 8 Escolha uma opção: 
+a) .RData
+
+> .RData é o arquivo binário nativo do R utilizado para salvar e carregar a área de trabalho do usuário (workspace), incluindo todos os objetos (vetores, data frames, modelos) existentes no .GlobalEnv. Ele é frequentemente criado/carregado ao fechar ou abrir o R.
+
+b)  .Rhistory
+
+> o .Rhistory armazena o histórico dos comandos digitados no console do R em texto puro.
+
+c)  .Rprofile
+
+> o .Rprofile é um arquivo de script R executado na inicialização para configurar preferências e carregar pacotes.
+
+d)  .Renviron
+
+> o .Renviron é um arquivo de configuração de variáveis de ambiente do sistema (como chaves de API e caminhos do R).
+
+e)  .Rproj
+
+> o .Rproj é um arquivo de projeto do RStudio que guarda as configurações da área de trabalho do RStudio.
+
+Resposta: a)
+
+9.Suponha que você execute a seguinte chamada para criar um vetor de repetição: {} rep(1:3, each = 2) Qual será a saída exata gerada no console?
+
+```{r}
+rep(1:3, each = 2)
+```
+
+a)  [1] 1 1 2 2 3 3
+b)  [1] 1 2 3 1 2 3
+c)  [1] 2 4 6
+d)  [1] 1 2 3 2
+e)  [1] 2 2 2
+
+Resposta: a)
+
+10.Qual função nativa é responsável por exibir as vinhetas (documentações com tutoriais e casos práticos de uso) associadas a um pacote instalado no ambiente R?
+
+a)  showTutorial()
+
+```         
+showTutorial()
+```
+
+b)  readDocs()
+
+```         
+readDocs()
+```
+
+c)  vignetteManual()
+
+```         
+vignetteManual()
+```
+
+d)  browseVignettes()
+
+```{r}
+browseVignettes()
+```
+
+e)  openVignette()
+
+```         
+openVignette()
+```
+
+> Todos, tirando a "d",são funções que não existem.
+
+Resposta: d)
+
+11. Ao trabalhar com data frames, qual é a convenção estrutural recomendada para manter a consistência e boas práticas de análise de dados?
+
+<!-- -->
+
+a.  Todas as colunas devem obrigatoriamente possuir o mesmo tipo atômico de dados.
+b.  Cada linha representa uma observação (registro) e cada coluna representa uma variável de interesse.
+c.  Variáveis qualitativas só podem ser armazenadas nos nomes das linhas (rownames).
+d.  O número de linhas deve ser sempre estritamente igual ao número de colunas.
+e.  Cada linha representa uma variável e cada coluna representa uma medição temporal.
+
+Resposta: b)
+
+12.Considere a operação aritmética x \<- 10 %% 3 e a operação y \<- 10 %/% 3 no R. Quais são, respectivamente, os resultados armazenados nas variáveis x e y?
+
+```{r}
+x <- 10 %% 3
+y <- 10 %/% 3
+x
+y
+```
+
+a.  x = 1 e y = 3
+b.  x = 3 e y = 1
+c.  x = 3.33 e y = 0
+d.  x = 1 e y = 3.333333
+e.  x = 0.33 e y = 3.33
+
+Resposta: a)
+
+13. Considere a seguinte instrução para criação de uma sequência: {} seq(from = 1, by = 2, length.out = 5) Qual será a sequência numérica resultante?
+
+```{r}
+seq(from = 1, by = 2, length.out = 5)
+```
+
+a.  1, 3, 5, 7, 9
+b.  2, 4, 6, 8, 10
+c.  1, 2, 4, 8, 16
+d.  1, 3, 5
+e.  1, 2, 3, 4, 5
+
+Resposta: a)
+
+14.Qual das alternativas a seguir é uma regra válida sobre a sintaxe e restrições para nomes de objetos no R?
+
+a.Nomes de objetos devem obrigatoriamente iniciar com um número seguido de ponto.
+
+> nomes de objetos no R não podem começar com números.
+
+b.  Nomes de objetos podem coincidir livremente com palavras reservadas como TRUE, FALSE, NULL e if.
+
+> palavras reservadas do R são protegidas e não podem ser reatribuídas como identificadores comuns.
+
+c.  Nomes de objetos podem conter caracteres de espaço e símbolos matemáticos livres como + e -.
+
+> espaços e operadores matemáticos (+, -, \*, /) não são permitidos em nomes de objetos padrão (sem o uso de aspas crases/backticks).
+
+d.  Nomes de objetos podem consistir em letras, números, ponto (.) e sublinhado (\_), não podendo ser palavras reservadas da linguagem.
+
+> nomes de objetos podem conter letras (maiúsculas e minúsculas), dígitos (0-9), o ponto (.) e o sublinhado (\_). No entanto, eles não podem começar com um número, não podem começar com um ponto seguido de número (ex: .2x é inválido) e não podem ser palavras reservadas (como if, else, while, function, TRUE, FALSE, NULL, NA, etc.).
+
+e.  Não é permitido o uso de letras maiúsculas em nomes de variáveis.
+
+> o R aceita maiúsculas normalmente, sendo inclusive uma linguagem case-sensitive (diferencia variavel de Variavel).
+
+Resposta: d)
+
+15. Dado o vetor numérico valores \<- c(10, 20, 30, 40, 50), o que a instrução valores[valores \> 25] realiza internamente?
+
+```{r}
+valores <- c(10, 20, 30, 40, 50)
+valores[valores > 25]
+```
+
+a.  Aplica uma máscara lógica (vetor de booleanos) retornando apenas os elementos cuja condição seja TRUE.
+b.  Retorna a quantidade de elementos que são maiores que 25.
+c.  Altera todos os valores acima de 25 para TRUE.
+d.  Lança um erro de tipo, pois vetores numéricos não aceitam operadores relacionais diretamente.
+e.  Realiza uma indexação posicional pegando os elementos de índice 2 a 5.
+
+Resposta: b)
+
+16. No R, valores indefinidos ou especiais possuem representações e comportamentos distintos. Se executarmos as expressões is.na(5 + NA) e is.nan(0 / 0), quais serão os valores retornados?
+
+```{r}
+is.na(5 + NA)
+is.nan(0 / 0)
+```
+
+a.  TRUE e TRUE
+b.  FALSE e TRUE
+c.  Um erro de execução na divisão por zero e TRUE no primeiro teste
+d.  TRUE e FALSE
+e.  FALSE e FALSE
+
+Resposta: a)
+
+17. Ao analisar o código-fonte base da linguagem R, nota-se que grande parte das rotinas de cálculo numérico intensivo e bibliotecas internas de base são implementadas em quais linguagens de programação compiladas para garantir performance?
+
+<!-- -->
+
+a.  Python e Java
+
+> são linguagens interpretadas/compiladas para bytecodes, não utilizadas no código-fonte nativo do R base.
+
+b.  C e Fortran
+
+> o R "base" foi escrito predominantemente em C (para a estrutura da linguagem, gerenciamento de memória e interpretação de objetos) e Fortran (para rotinas numéricas de alta performance e álgebra linear, como manipulação de matrizes e algoritmos estatísticos clássicos baseados em BLAS e LAPACK).
+
+c.  Lisp e C#
+
+> embora o R tenha herdado conceitos do Scheme (um dialeto de Lisp), o seu motor base compilado não é escrito em Lisp nem em C#.
+
+d.  Rust e C++
+
+> C++ é muito popular no ecossistema moderno do R (através do pacote Rcpp), mas o código-fonte original/nativo da base do R utiliza C e Fortran.
+
+e.  Assembly e Pascal
+
+> não formam a base do interpretador e das bibliotecas numéricas nativas do R.
+
+Resposta: b)
+
+18. Qual das alternativas expressa a diferença fundamental de indexação entre os operadores [ e [[ ao recuperar um único elemento de um objeto da classe list no R?
+
+Questão 18 Escolha uma opção: a. [ extrai o conteúdo do elemento diretamente no seu tipo primitivo, enquanto [[ preserva a estrutura de lista.
+
+> a alternativa troca os papéis: quem extrai o conteúdo primitivo é o [[, e quem preserva a lista é o [.
+
+b.  [[ permite indexação por intervalos contínuos (ex: [[1:3]]), ao passo que [ aceita apenas um único índice escalar.
+
+> o operador [[ aceita apenas um único índice escalar por nível de extração (ou um vetor para navegação recursiva em profundidade), enquanto o [ aceita múltiplos índices para fatiamento (ex: lista[1:3]).
+
+c.  Não há diferença prática; tratam-se de sinônimos estritos de sintaxe.
+
+> não são sinônimos; possuem comportamentos completamente distintos e fundamentais no R.
+
+d.  [ preserva a estrutura de lista retornando uma sublista com o elemento selecionado, enquanto [[ extrai diretamente o conteúdo do componente da lista.
+
+> o operador [ (colchete simples): Funciona como uma tesoura de subconjuntos (subsetting). Ao aplicar lista[1], ele retorna uma nova lista contendo apenas o primeiro elemento (preserva a estrutura do recipiente).
+>
+> o operador [[ (colchete duplo): Funciona como uma extração de conteúdo. Ao aplicar lista[[1]], ele "desembala" o item e retorna o conteúdo direto contido naquela posição (um vetor, um data frame, uma função, etc.), no seu tipo de dado original.
+
+e.  [[ funciona apenas para matrizes numéricas e [ apenas para listas heterogêneas.
+
+> ambos os operadores podem ser usados em diversos tipos de estruturas de dados no R, e não estão restritos a essa regra.
+
+Resposta: d)
+
+19. Considere um objeto de dados criado no R. Sabendo que objetos possuem tipo (type) e classe (class), qual alternativa descreve com precisão a distinção entre esses dois conceitos?
+
+Questão 19 Escolha uma opção:
+a. O tipo define as dimensões (linhas e colunas), enquanto a classe determina o valor booleano do dado.
+
+> dimensões e valores booleanos: Incorreto. Dimensões são atributos (dim), e valores booleanos referem-se ao tipo logical.
+
+b. Ambos são sinônimos idênticos na arquitetura de orientação a objetos S3 do R base.
+
+> sinônimos em S3: Incorreto. No sistema S3, a classe é um atributo explicito do objeto usado para despacho de métodos, enquanto o tipo reflete a estrutura primitiva do vetor/objeto em C.
+
+c. O tipo é definido pelo usuário em tempo de execução, enquanto a classe é estática e nunca muda.
+
+> alterabilidade: Incorreto. Ambos podem mudar em tempo de execução; a classe inclusive pode ser redefinida dinamicamente usando class(x) <- "nova_classe"
+
+d. Classe refere-se apenas a data frames; tipos referem-se estritamente a matrizes bidimensionais.
+
+> restrição a data frames e matrizes: Incorreto. Todos os objetos no R possuem tipo e classe, desde vetores atômicos simples até funções e instâncias complexas.
+
+e. O tipo descreve como o dado é armazenado na memória física e o que é possível fazer com ele; a classe orienta o despacho de métodos genéricos aplicáveis a ele.
+
+>typeof() (Tipo de Armazenamento): Refere-se à estrutura de dados interna da linguagem em nível do ecossistema C/R (como o objeto é representado na memória física). Exemplos de tipos nativos incluem double, integer, character, list, logical, symbol e closure.
+>
+>class() (Classe / Sistema de Objetos): Refere-se à camada de abstração orientada a objetos (especialmente no sistema S3 do R). Ela orienta as funções genéricas (como print(), plot() e summary()) sobre qual método específico deve ser disparado (method dispatch) ao processar aquele objeto. Por exemplo, um factor possui o tipo de armazenamento interno integer, mas sua classe é "factor".
+
+Resposta: e)
+
+20. Qual função do R permite adicionar elementos a um vetor existente especificando a posição exata de inserção através do argumento after?
+
+Questão 20 Escolha uma opção:
+a. add()
+```
+add()
+```
+b. push()
+```
+push()
+```
+c. concat()
+```
+concat()
+```
+d. append()
+```{r}
+append(x, values = 1)
+```
+e. insert()
+```
+insert()
+```
+> Todos, tirando a "d",são funções que não existem no R nativo.
+
+Resposta: d)
