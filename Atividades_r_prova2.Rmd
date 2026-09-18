@@ -656,4 +656,38 @@ E)O maior elemento da diagonal do inverso da matriz resultante do produto matric
 
 ```
 
-5)
+5)Considere as matrizes A, B e C dadas por:
+```{r}
+A2 <- matrix(c(15,15,7,21,25,11,38,22,26,46,11,34,9,33,16,22,35,17,11,8,34,33,20,41,9), nrow = 5,ncol = 5, byrow = TRUE)
+B2 <- matrix(c(21,20,13,48,45,44,31,7,15,25,47,14,43,14,2,46,25,40,36,46,43,1,1,11,11), nrow = 5,ncol = 5, byrow = TRUE)
+C2 <- A*B*(B*A)^-1
+```
+
+
+Responda as seguintes questões. Considerequatro casas decimais para as respostas. Use
+as ferramentas de busca na documentaçãodo R para encontrar as funções adequadas para cada tipo de operações com matrizes.Use quatro casas decimais para fazer o arredondamento.
+
+A)O Log¹⁰ do valor absoluto do determinante C de é:
+```{r}
+log10(det(C2))
+```
+
+B)O Log¹⁰ do valor absoluto do determinante da matriz resultante do produto matricial entre A e B é:
+```{r}
+log10(det(A2)*det(B2))
+```
+
+C)A soma dos valores absolutos da diagonal da matriz B é:
+```{r}
+sum(diag(B2))
+```
+
+D)A soma dos elementos que estão acima da diagonal de A é:
+```{r}
+sum(A2[1, 2:5]) + sum(A2[2, 3:5]) + sum(A2[3, 4:5]) + sum(A2[4, 5:5])
+```
+
+E)O maior elemento da diagonal do inverso da matriz resultante do produto matricial entre A e o transposto de B é:
+```{r}
+
+```
