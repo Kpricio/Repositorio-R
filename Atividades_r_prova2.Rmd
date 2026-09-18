@@ -497,6 +497,159 @@ Resposta: d)
 
 # Exercicios 2
 
-# Prova do ano passo
+# Prova do ano passado
 
+1. Considere as notas de alunos descritas no vetor numérico nomeado em _Notas_ e os alunos que entregaram os trabalhos 
+descritas no vetor lógico nomeado em _Trabalhos_.
+
+```{r}
+Tabela1_notas <- data.frame(Tabela1_notas <- data.frame(
+  nomes = nomes <- c("João","Maria","José","Ana","Pedro","Paula","Carlos","Mariana","Fernando","Luiza"), 
+  notas = notas <- c(71,52,70,70,72,80,87,38,98,55), 
+  entregas = entregas <- c(TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE))
+)
+```
+
+Responda as seguintes questões, considerando quatro casas decimais
+
+A)A raiz quadrada da média das notas dos alunos é:
+```{r}
+sqrt(abs(mean(Tabela1_notas$notas)))
+```
+
+B)A mediana dos alunos que entregaram o trabalho é:
+```{r}
+median(Tabela1_notas$notas [Tabela1_notas$entregas == TRUE])
+```
+
+C) A maior nota dentre os alunos que não entregaram o trabalho é:
+```{r}
+max(Tabela1_notas$notas [Tabela1_notas$entregas == FALSE])
+```
+
+D)Assuma que a média para aprovação direta é 70, alunos com média inferior a 40 tem
+reprovação direta, os demais estão em recuperação. A quantidade de alunos em
+recuperação que entregou os trabalhos é:
+```{r}
+ncol(Tabela1_notas$notas < 70 & Tabela1_notas$notas > 40 & 
+       Tabela1_notas$entregas == TRUE)
+```
+
+E)O desvio-padrão das notas dos alunos que entregaram os trabalhos é:
+```{r}
+sd(Tabela1_notas$notas [Tabela1_notas$entregas == TRUE])
+```
+
+2.Considere as notas de alunos descritas no vetor numérico nomeado em _Notas_ e os alunos que entregaram os trabalhos 
+descritas no vetor lógico nomeado em _Trabalhos_.
+
+```{r}
+Tabela2_notas <- data.frame(Tabela2_notas <- data.frame(
+  nomes = nomes <- c("João","Maria","José","Ana","Pedro","Paula","Carlos","Mariana","Fernando","Luiza"), 
+  notas = notas <- c(44,93,54,33,44,65,65,90,86,82), 
+  entregas = entregas <- c(FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE))
+)
+```
+
+Responda as seguintes questões, considerando quatro casas decimais
+
+A)A raiz quadrada da média das notas dos alunos é:
+```{r}
+sqrt(abs(mean(Tabela2_notas$notas)))
+```
+
+B)A mediana dos alunos que entregaram o trabalho é:
+```{r}
+median(Tabela2_notas$notas [Tabela2_notas$entregas == TRUE])
+```
+
+C) A maior nota dentre os alunos que não entregaram o trabalho é:
+```{r}
+max(Tabela2_notas$notas [Tabela2_notas$entregas == FALSE])
+```
+
+D)Assuma que a média para aprovação direta é 70, alunos com média inferior a 40 tem
+reprovação direta, os demais estão em recuperação. A quantidade de alunos em
+recuperação que entregou os trabalhos é:
+```{r}
+ncol(Tabela2_notas$notas < 70 & Tabela2_notas$notas > 40 & 
+       Tabela2_notas$entregas == TRUE)
+```
+
+E)O desvio-padrão das notas dos alunos que entregaram os trabalhos é:
+```{r}
+sd(Tabela2_notas$notas [Tabela2_notas$entregas == TRUE])
+```
+
+3.Considere as notas de alunos descritas no vetor numérico nomeado em _Notas_ e os alunos que entregaram os trabalhos descritas no vetor lógico nomeado em _Trabalhos_.
+
+```{r}
+Tabela3_notas <- data.frame(Tabela3_notas <- data.frame(
+  nomes = nomes <- c("João","Maria","José","Ana","Pedro","Paula","Carlos","Mariana","Fernando","Luiza"), 
+  notas = notas <- c(69,60,47,92,75,94,64,61,95,90), 
+  entregas = entregas <- c(FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE))
+)
+```
+
+Responda as seguintes questões, considerando quatro casas decimais
+
+A)A raiz quadrada da média das notas dos alunos é:
+```{r}
+sqrt(abs(mean(Tabela3_notas$notas)))
+```
+
+B)A mediana dos alunos que entregaram o trabalho é:
+```{r}
+median(Tabela3_notas$notas [Tabela3_notas$entregas == TRUE])
+```
+
+C) A maior nota dentre os alunos que não entregaram o trabalho é:
+```{r}
+max(Tabela3_notas$notas [Tabela3_notas$entregas == FALSE])
+```
+
+D)Assuma que a média para aprovação direta é 70, alunos com média inferior a 40 tem
+reprovação direta, os demais estão em recuperação. A quantidade de alunos em
+recuperação que entregou os trabalhos é:
+```{r}
+ncol(Tabela3_notas$notas < 70 & Tabela3_notas$notas > 40 & 
+       Tabela3_notas$entregas == TRUE)
+```
+
+E)O desvio-padrão das notas dos alunos que entregaram os trabalhos é:
+```{r}
+sd(Tabela3_notas$notas [Tabela3_notas$entregas == TRUE])
+```
+
+4.Considere as matrizes A, B e C dadas por:
+```{r}
+A <- matrix(c(0,0,16,6,26,7,50,18,24,44,31,27,2,17,9,21,13,39,26,11,38,23,39,9,23), nrow = 5,ncol = 5)
+B <- matrix(c(44,27,30,33,34,41,5,27,41,11,32,19,24,37,44,4,41,35,0,21,31,21,44,10,49), nrow = 5,ncol = 5)
+C <- A*B*(B*A)^-1
+```
+
+Responda as seguintes questões. Considerequatro casas decimais para as respostas. Use
+as ferramentas de busca na documentaçãodo R para encontrar as funções adequadas para cada tipo de operações com matrizes.Use quatro casas decimais para fazer o arredondamento.
+
+A)O Log¹⁰ do valor absoluto do determinante C de é:
+```{r}
+log10(det(C))
+```
+B)O Log¹⁰ do valor absoluto do determinante da matriz resultante do produto matricial entre A e B é:
+```{r}
+log10(det(A)*det(B))
+```
+C)A soma dos valores absolutos da diagonal da matriz B é:
+```{r}
+sum(diag(B))
+```
+
+D)A soma dos elementos que estão acima da diagonal de A é:
+```{r}
+sum(A[1, 2:5]) + sum(A[2, 3:5]) + sum(A[3, 4:5]) + sum(A[4, 5:5])
+```
+E)O maior elemento da diagonal do inverso da matriz resultante do produto matricial entre A e o transposto de B é:
+```{r}
+sum(A[1, 2:5]) + sum(A[2, 3:5]) + sum(A[3, 4:5]) + sum(A[4, 5:5])
+```
 
