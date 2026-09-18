@@ -4,6 +4,8 @@ output: html_document
 date: "2026-09-17"
 ---
 
+# Exercicios 1
+
 1.  Se você deseja gerar 10 realizações independentes de uma distribuição Gaussiana com média 1.80 e desvio-padrão 0.1, qual comando deve ser invocado?
 
 Questão 1 Escolha uma opção:
@@ -288,11 +290,11 @@ Resposta: d)
 
 <!-- -->
 
-a.  Todas as colunas devem obrigatoriamente possuir o mesmo tipo atômico de dados.
-b.  Cada linha representa uma observação (registro) e cada coluna representa uma variável de interesse.
-c.  Variáveis qualitativas só podem ser armazenadas nos nomes das linhas (rownames).
-d.  O número de linhas deve ser sempre estritamente igual ao número de colunas.
-e.  Cada linha representa uma variável e cada coluna representa uma medição temporal.
+a)  Todas as colunas devem obrigatoriamente possuir o mesmo tipo atômico de dados.
+b)  Cada linha representa uma observação (registro) e cada coluna representa uma variável de interesse.
+c)  Variáveis qualitativas só podem ser armazenadas nos nomes das linhas (rownames).
+d)  O número de linhas deve ser sempre estritamente igual ao número de colunas.
+e)  Cada linha representa uma variável e cada coluna representa uma medição temporal.
 
 Resposta: b)
 
@@ -305,11 +307,11 @@ x
 y
 ```
 
-a.  x = 1 e y = 3
-b.  x = 3 e y = 1
-c.  x = 3.33 e y = 0
-d.  x = 1 e y = 3.333333
-e.  x = 0.33 e y = 3.33
+a)  x = 1 e y = 3
+b)  x = 3 e y = 1
+c)  x = 3.33 e y = 0
+d)  x = 1 e y = 3.333333
+e)  x = 0.33 e y = 3.33
 
 Resposta: a)
 
@@ -319,33 +321,33 @@ Resposta: a)
 seq(from = 1, by = 2, length.out = 5)
 ```
 
-a.  1, 3, 5, 7, 9
-b.  2, 4, 6, 8, 10
-c.  1, 2, 4, 8, 16
-d.  1, 3, 5
-e.  1, 2, 3, 4, 5
+a)  1, 3, 5, 7, 9
+b)  2, 4, 6, 8, 10
+c)  1, 2, 4, 8, 16
+d)  1, 3, 5
+e)  1, 2, 3, 4, 5
 
 Resposta: a)
 
 14.Qual das alternativas a seguir é uma regra válida sobre a sintaxe e restrições para nomes de objetos no R?
 
-a.Nomes de objetos devem obrigatoriamente iniciar com um número seguido de ponto.
+a)Nomes de objetos devem obrigatoriamente iniciar com um número seguido de ponto.
 
 > nomes de objetos no R não podem começar com números.
 
-b.  Nomes de objetos podem coincidir livremente com palavras reservadas como TRUE, FALSE, NULL e if.
+b)  Nomes de objetos podem coincidir livremente com palavras reservadas como TRUE, FALSE, NULL e if.
 
 > palavras reservadas do R são protegidas e não podem ser reatribuídas como identificadores comuns.
 
-c.  Nomes de objetos podem conter caracteres de espaço e símbolos matemáticos livres como + e -.
+c)  Nomes de objetos podem conter caracteres de espaço e símbolos matemáticos livres como + e -.
 
 > espaços e operadores matemáticos (+, -, \*, /) não são permitidos em nomes de objetos padrão (sem o uso de aspas crases/backticks).
 
-d.  Nomes de objetos podem consistir em letras, números, ponto (.) e sublinhado (\_), não podendo ser palavras reservadas da linguagem.
+d)  Nomes de objetos podem consistir em letras, números, ponto (.) e sublinhado (\_), não podendo ser palavras reservadas da linguagem.
 
 > nomes de objetos podem conter letras (maiúsculas e minúsculas), dígitos (0-9), o ponto (.) e o sublinhado (\_). No entanto, eles não podem começar com um número, não podem começar com um ponto seguido de número (ex: .2x é inválido) e não podem ser palavras reservadas (como if, else, while, function, TRUE, FALSE, NULL, NA, etc.).
 
-e.  Não é permitido o uso de letras maiúsculas em nomes de variáveis.
+e)  Não é permitido o uso de letras maiúsculas em nomes de variáveis.
 
 > o R aceita maiúsculas normalmente, sendo inclusive uma linguagem case-sensitive (diferencia variavel de Variavel).
 
@@ -358,11 +360,11 @@ valores <- c(10, 20, 30, 40, 50)
 valores[valores > 25]
 ```
 
-a.  Aplica uma máscara lógica (vetor de booleanos) retornando apenas os elementos cuja condição seja TRUE.
-b.  Retorna a quantidade de elementos que são maiores que 25.
-c.  Altera todos os valores acima de 25 para TRUE.
-d.  Lança um erro de tipo, pois vetores numéricos não aceitam operadores relacionais diretamente.
-e.  Realiza uma indexação posicional pegando os elementos de índice 2 a 5.
+a)  Aplica uma máscara lógica (vetor de booleanos) retornando apenas os elementos cuja condição seja TRUE.
+b)  Retorna a quantidade de elementos que são maiores que 25.
+c)  Altera todos os valores acima de 25 para TRUE.
+d)  Lança um erro de tipo, pois vetores numéricos não aceitam operadores relacionais diretamente.
+e)  Realiza uma indexação posicional pegando os elementos de índice 2 a 5.
 
 Resposta: b)
 
@@ -373,11 +375,11 @@ is.na(5 + NA)
 is.nan(0 / 0)
 ```
 
-a.  TRUE e TRUE
-b.  FALSE e TRUE
-c.  Um erro de execução na divisão por zero e TRUE no primeiro teste
-d.  TRUE e FALSE
-e.  FALSE e FALSE
+a)  TRUE e TRUE
+b)  FALSE e TRUE
+c)  Um erro de execução na divisão por zero e TRUE no primeiro teste
+d)  TRUE e FALSE
+e)  FALSE e FALSE
 
 Resposta: a)
 
@@ -385,23 +387,24 @@ Resposta: a)
 
 <!-- -->
 
-a.  Python e Java
+a)  Python e Java
 
 > são linguagens interpretadas/compiladas para bytecodes, não utilizadas no código-fonte nativo do R base.
 
-b.  C e Fortran
+b)  C e Fortran
 
 > o R "base" foi escrito predominantemente em C (para a estrutura da linguagem, gerenciamento de memória e interpretação de objetos) e Fortran (para rotinas numéricas de alta performance e álgebra linear, como manipulação de matrizes e algoritmos estatísticos clássicos baseados em BLAS e LAPACK).
 
-c.  Lisp e C#
+c)  Lisp e C#
 
-> embora o R tenha herdado conceitos do Scheme (um dialeto de Lisp), o seu motor base compilado não é escrito em Lisp nem em C#.
+> embora o R tenha herdado conceitos do Scheme (um dialeto de Lisp), o seu motor base compilado não é escrito em 
+Lisp nem em C#.
 
-d.  Rust e C++
+d)  Rust e C++
 
 > C++ é muito popular no ecossistema moderno do R (através do pacote Rcpp), mas o código-fonte original/nativo da base do R utiliza C e Fortran.
 
-e.  Assembly e Pascal
+e)  Assembly e Pascal
 
 > não formam a base do interpretador e das bibliotecas numéricas nativas do R.
 
@@ -409,25 +412,27 @@ Resposta: b)
 
 18. Qual das alternativas expressa a diferença fundamental de indexação entre os operadores [ e [[ ao recuperar um único elemento de um objeto da classe list no R?
 
-Questão 18 Escolha uma opção: a. [ extrai o conteúdo do elemento diretamente no seu tipo primitivo, enquanto [[ preserva a estrutura de lista.
+Questão 18 Escolha uma opção: 
+
+a) [ extrai o conteúdo do elemento diretamente no seu tipo primitivo, enquanto [[ preserva a estrutura de lista.
 
 > a alternativa troca os papéis: quem extrai o conteúdo primitivo é o [[, e quem preserva a lista é o [.
 
-b.  [[ permite indexação por intervalos contínuos (ex: [[1:3]]), ao passo que [ aceita apenas um único índice escalar.
+b)  [[ permite indexação por intervalos contínuos (ex: [[1:3]]), ao passo que [ aceita apenas um único índice escalar.
 
 > o operador [[ aceita apenas um único índice escalar por nível de extração (ou um vetor para navegação recursiva em profundidade), enquanto o [ aceita múltiplos índices para fatiamento (ex: lista[1:3]).
 
-c.  Não há diferença prática; tratam-se de sinônimos estritos de sintaxe.
+c)  Não há diferença prática; tratam-se de sinônimos estritos de sintaxe.
 
 > não são sinônimos; possuem comportamentos completamente distintos e fundamentais no R.
 
-d.  [ preserva a estrutura de lista retornando uma sublista com o elemento selecionado, enquanto [[ extrai diretamente o conteúdo do componente da lista.
+d)  [ preserva a estrutura de lista retornando uma sublista com o elemento selecionado, enquanto [[ extrai diretamente o conteúdo do componente da lista.
 
 > o operador [ (colchete simples): Funciona como uma tesoura de subconjuntos (subsetting). Ao aplicar lista[1], ele retorna uma nova lista contendo apenas o primeiro elemento (preserva a estrutura do recipiente).
 >
 > o operador [[ (colchete duplo): Funciona como uma extração de conteúdo. Ao aplicar lista[[1]], ele "desembala" o item e retorna o conteúdo direto contido naquela posição (um vetor, um data frame, uma função, etc.), no seu tipo de dado original.
 
-e.  [[ funciona apenas para matrizes numéricas e [ apenas para listas heterogêneas.
+e)  [[ funciona apenas para matrizes numéricas e [ apenas para listas heterogêneas.
 
 > ambos os operadores podem ser usados em diversos tipos de estruturas de dados no R, e não estão restritos a essa regra.
 
@@ -436,23 +441,25 @@ Resposta: d)
 19. Considere um objeto de dados criado no R. Sabendo que objetos possuem tipo (type) e classe (class), qual alternativa descreve com precisão a distinção entre esses dois conceitos?
 
 Questão 19 Escolha uma opção:
-a. O tipo define as dimensões (linhas e colunas), enquanto a classe determina o valor booleano do dado.
+
+a) O tipo define as dimensões (linhas e colunas), enquanto a classe determina o valor booleano do dado.
 
 > dimensões e valores booleanos: Incorreto. Dimensões são atributos (dim), e valores booleanos referem-se ao tipo logical.
 
-b. Ambos são sinônimos idênticos na arquitetura de orientação a objetos S3 do R base.
+b) Ambos são sinônimos idênticos na arquitetura de orientação a objetos S3 do R base.
 
-> sinônimos em S3: Incorreto. No sistema S3, a classe é um atributo explicito do objeto usado para despacho de métodos, enquanto o tipo reflete a estrutura primitiva do vetor/objeto em C.
+> sinônimos em S3: Incorreto. No sistema S3, a classe é um atributo explicito do objeto usado para despacho de métodos,
+enquanto o tipo reflete a estrutura primitiva do vetor/objeto em C.
 
-c. O tipo é definido pelo usuário em tempo de execução, enquanto a classe é estática e nunca muda.
+c) O tipo é definido pelo usuário em tempo de execução, enquanto a classe é estática e nunca muda.
 
 > alterabilidade: Incorreto. Ambos podem mudar em tempo de execução; a classe inclusive pode ser redefinida dinamicamente usando class(x) <- "nova_classe"
 
-d. Classe refere-se apenas a data frames; tipos referem-se estritamente a matrizes bidimensionais.
+d) Classe refere-se apenas a data frames; tipos referem-se estritamente a matrizes bidimensionais.
 
 > restrição a data frames e matrizes: Incorreto. Todos os objetos no R possuem tipo e classe, desde vetores atômicos simples até funções e instâncias complexas.
 
-e. O tipo descreve como o dado é armazenado na memória física e o que é possível fazer com ele; a classe orienta o despacho de métodos genéricos aplicáveis a ele.
+e) O tipo descreve como o dado é armazenado na memória física e o que é possível fazer com ele; a classe orienta o despacho de métodos genéricos aplicáveis a ele.
 
 >typeof() (Tipo de Armazenamento): Refere-se à estrutura de dados interna da linguagem em nível do ecossistema C/R (como o objeto é representado na memória física). Exemplos de tipos nativos incluem double, integer, character, list, logical, symbol e closure.
 >
@@ -463,26 +470,191 @@ Resposta: e)
 20. Qual função do R permite adicionar elementos a um vetor existente especificando a posição exata de inserção através do argumento after?
 
 Questão 20 Escolha uma opção:
-a. add()
+
+a) add()
 ```
 add()
 ```
-b. push()
+b) push()
 ```
 push()
 ```
-c. concat()
+c) concat()
 ```
 concat()
 ```
-d. append()
+d) append()
 ```{r}
 append(x, values = 1)
 ```
-e. insert()
+e) insert()
 ```
 insert()
 ```
 > Todos, tirando a "d",são funções que não existem no R nativo.
 
 Resposta: d)
+
+# Exercicios 2
+
+# Prova do ano passado
+
+1. Considere as notas de alunos descritas no vetor numérico nomeado em _Notas_ e os alunos que entregaram os trabalhos 
+descritas no vetor lógico nomeado em _Trabalhos_.
+
+```{r}
+Tabela1_notas <- data.frame(Tabela1_notas <- data.frame(
+  nomes = nomes <- c("João","Maria","José","Ana","Pedro","Paula","Carlos","Mariana","Fernando","Luiza"), 
+  notas = notas <- c(71,52,70,70,72,80,87,38,98,55), 
+  entregas = entregas <- c(TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE))
+)
+```
+
+Responda as seguintes questões, considerando quatro casas decimais
+
+A)A raiz quadrada da média das notas dos alunos é:
+```{r}
+sqrt(abs(mean(Tabela1_notas$notas)))
+```
+
+B)A mediana dos alunos que entregaram o trabalho é:
+```{r}
+median(Tabela1_notas$notas [Tabela1_notas$entregas == TRUE])
+```
+
+C) A maior nota dentre os alunos que não entregaram o trabalho é:
+```{r}
+max(Tabela1_notas$notas [Tabela1_notas$entregas == FALSE])
+```
+
+D)Assuma que a média para aprovação direta é 70, alunos com média inferior a 40 tem
+reprovação direta, os demais estão em recuperação. A quantidade de alunos em
+recuperação que entregou os trabalhos é:
+```{r}
+ncol(Tabela1_notas$notas < 70 & Tabela1_notas$notas > 40 & 
+       Tabela1_notas$entregas == TRUE)
+```
+
+E)O desvio-padrão das notas dos alunos que entregaram os trabalhos é:
+```{r}
+sd(Tabela1_notas$notas [Tabela1_notas$entregas == TRUE])
+```
+
+2.Considere as notas de alunos descritas no vetor numérico nomeado em _Notas_ e os alunos que entregaram os trabalhos 
+descritas no vetor lógico nomeado em _Trabalhos_.
+
+```{r}
+Tabela2_notas <- data.frame(Tabela2_notas <- data.frame(
+  nomes = nomes <- c("João","Maria","José","Ana","Pedro","Paula","Carlos","Mariana","Fernando","Luiza"), 
+  notas = notas <- c(44,93,54,33,44,65,65,90,86,82), 
+  entregas = entregas <- c(FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE))
+)
+```
+
+Responda as seguintes questões, considerando quatro casas decimais
+
+A)A raiz quadrada da média das notas dos alunos é:
+```{r}
+sqrt(abs(mean(Tabela2_notas$notas)))
+```
+
+B)A mediana dos alunos que entregaram o trabalho é:
+```{r}
+median(Tabela2_notas$notas [Tabela2_notas$entregas == TRUE])
+```
+
+C) A maior nota dentre os alunos que não entregaram o trabalho é:
+```{r}
+max(Tabela2_notas$notas [Tabela2_notas$entregas == FALSE])
+```
+
+D)Assuma que a média para aprovação direta é 70, alunos com média inferior a 40 tem
+reprovação direta, os demais estão em recuperação. A quantidade de alunos em
+recuperação que entregou os trabalhos é:
+```{r}
+ncol(Tabela2_notas$notas < 70 & Tabela2_notas$notas > 40 & 
+       Tabela2_notas$entregas == TRUE)
+```
+
+E)O desvio-padrão das notas dos alunos que entregaram os trabalhos é:
+```{r}
+sd(Tabela2_notas$notas [Tabela2_notas$entregas == TRUE])
+```
+
+3.Considere as notas de alunos descritas no vetor numérico nomeado em _Notas_ e os alunos que entregaram os trabalhos descritas no vetor lógico nomeado em _Trabalhos_.
+
+```{r}
+Tabela3_notas <- data.frame(Tabela3_notas <- data.frame(
+  nomes = nomes <- c("João","Maria","José","Ana","Pedro","Paula","Carlos","Mariana","Fernando","Luiza"), 
+  notas = notas <- c(69,60,47,92,75,94,64,61,95,90), 
+  entregas = entregas <- c(FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE))
+)
+```
+
+Responda as seguintes questões, considerando quatro casas decimais
+
+A)A raiz quadrada da média das notas dos alunos é:
+```{r}
+sqrt(abs(mean(Tabela3_notas$notas)))
+```
+
+B)A mediana dos alunos que entregaram o trabalho é:
+```{r}
+median(Tabela3_notas$notas [Tabela3_notas$entregas == TRUE])
+```
+
+C) A maior nota dentre os alunos que não entregaram o trabalho é:
+```{r}
+max(Tabela3_notas$notas [Tabela3_notas$entregas == FALSE])
+```
+
+D)Assuma que a média para aprovação direta é 70, alunos com média inferior a 40 tem
+reprovação direta, os demais estão em recuperação. A quantidade de alunos em
+recuperação que entregou os trabalhos é:
+```{r}
+ncol(Tabela3_notas$notas < 70 & Tabela3_notas$notas > 40 & 
+       Tabela3_notas$entregas == TRUE)
+```
+
+E)O desvio-padrão das notas dos alunos que entregaram os trabalhos é:
+```{r}
+sd(Tabela3_notas$notas [Tabela3_notas$entregas == TRUE])
+```
+
+4.Considere as matrizes A, B e C dadas por:
+```{r}
+A <- matrix(c(0,0,16,6,26,7,50,18,24,44,31,27,2,17,9,21,13,39,26,11,38,23,39,9,23), nrow = 5,ncol = 5)
+B <- matrix(c(44,27,30,33,34,41,5,27,41,11,32,19,24,37,44,4,41,35,0,21,31,21,44,10,49), nrow = 5,ncol = 5)
+C <- A*B*(B*A)^-1
+```
+
+Responda as seguintes questões. Considerequatro casas decimais para as respostas. Use
+as ferramentas de busca na documentaçãodo R para encontrar as funções adequadas para cada tipo de operações com matrizes.Use quatro casas decimais para fazer o arredondamento.
+
+A)O Log¹⁰ do valor absoluto do determinante C de é:
+```{r}
+log10(det(C))
+```
+B)O Log¹⁰ do valor absoluto do determinante da matriz resultante do produto matricial entre A e B é:
+```{r}
+log10(det(A)*det(B))
+```
+C)A soma dos valores absolutos da diagonal da matriz B é:
+```{r}
+sum(diag(B))
+```
+
+D)A soma dos elementos que estão acima da diagonal de A é:
+```{r}
+sum(A[1, 2:5]) + sum(A[2, 3:5]) + sum(A[3, 4:5]) + sum(A[4, 5:5])
+```
+E)O maior elemento da diagonal do inverso da matriz resultante do produto matricial entre A e o transposto de B é:
+```{r}
+sum(A[1, 2:5]) + sum(A[2, 3:5]) + sum(A[3, 4:5]) + sum(A[4, 5:5])
+```
+
+
+
+
+
+
