@@ -635,12 +635,18 @@ A)O Log¹⁰ do valor absoluto do determinante C de é:
 ```{r}
 log10(det(C))
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2d5d5ca4dfa87d7ece1e9f9c2511e47cfbcda569
 B)O Log¹⁰ do valor absoluto do determinante da matriz resultante do produto matricial entre A e B é:
 ```{r}
 log10(det(A)*det(B))
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2d5d5ca4dfa87d7ece1e9f9c2511e47cfbcda569
 C)A soma dos valores absolutos da diagonal da matriz B é:
 ```{r}
 sum(diag(B))
@@ -650,6 +656,7 @@ D)A soma dos elementos que estão acima da diagonal de A é:
 ```{r}
 sum(A[1, 2:5]) + sum(A[2, 3:5]) + sum(A[3, 4:5]) + sum(A[4, 5:5])
 ```
+<<<<<<< HEAD
 
 E)O maior elemento da diagonal do inverso da matriz resultante do produto matricial entre A e o transposto de B é:
 ```{r}
@@ -657,3 +664,10 @@ E)O maior elemento da diagonal do inverso da matriz resultante do produto matric
 ```
 
 5)
+=======
+E)O maior elemento da diagonal do inverso da matriz resultante do produto matricial entre A e o transposto de B é:
+```{r}
+sum(A[1, 2:5]) + sum(A[2, 3:5]) + sum(A[3, 4:5]) + sum(A[4, 5:5])
+```
+
+>>>>>>> 2d5d5ca4dfa87d7ece1e9f9c2511e47cfbcda569
